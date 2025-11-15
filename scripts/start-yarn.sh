@@ -29,8 +29,8 @@ EOF
 fi
 
 # Iniciar YARN
-yarn --daemon start resourcemanager
-yarn --daemon start nodemanager
+echo "Iniciando ResourceManager..."
+yarn resourcemanager
 
 # Evitar que el contenedor termine
 tail -f /dev/null

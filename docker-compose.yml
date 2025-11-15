@@ -99,3 +99,7 @@ services:
       - "8042:8042"   # Interfaz del NodeManager
     networks:
       - hdfs_network
+
+networks:
+  hdfs_network:
+    driver: bridge
